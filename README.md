@@ -1,7 +1,7 @@
 # Checkout test
 
 ## 1. Architecture
-The project is created using the Atomic Design System Methology.
+The project is created using the Atomic Design System methodology.
 
 ### 1.1 Folders
 - ./storybook: Configuration of Storybook
