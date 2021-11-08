@@ -1,0 +1,30 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import Rating from './index';
+
+export const Template = (args) => <Rating {...args} />
+
+# Rating
+
+## Overview
+
+Description.......
+
+## Default
+<Canvas>
+    <Story 
+        name="Default" 
+        args={{ 
+          max: "5",
+          defaultRating: "2"
+         }}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+<Meta
+  title="Atoms/Rating"
+  argTypes={{}}
+/>
+
+
+<ArgsTable of={Rating} />

@@ -1,0 +1,27 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import Review from './index';
+
+export const Template = (args) => <Review {...args} />
+
+# Review
+
+## Overview
+
+Description.......
+
+## Default
+<Canvas>
+    <Story 
+        name="Default" 
+        args={{  }}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+
+<Meta
+  title="Organism/Review"
+  argTypes={{}}
+/>
+
+<ArgsTable of={Review} />

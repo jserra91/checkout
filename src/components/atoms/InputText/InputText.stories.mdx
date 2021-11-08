@@ -1,0 +1,29 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import InputText from './index';
+
+export const Template = (args) => <InputText {...args} />
+
+# InputText
+
+## Overview
+
+Description.......
+
+## Default
+<Canvas>
+    <Story 
+        name="Default" 
+        args={{ 
+          label: "Example Input Text"
+         }}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+
+<Meta
+  title="Atoms/InputText"
+  argTypes={{}}
+/>
+
+<ArgsTable of={InputText} />

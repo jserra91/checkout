@@ -1,0 +1,27 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import Information from './index';
+
+export const Template = (args) => <Information {...args} />
+
+# Information
+
+## Overview
+
+Description.......
+
+## Default
+<Canvas>
+    <Story 
+        name="Default" 
+        args={{  }}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+
+<Meta
+  title="Templates/Information"
+  argTypes={{}}
+/>
+
+<ArgsTable of={Information} />

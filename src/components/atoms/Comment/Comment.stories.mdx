@@ -1,0 +1,34 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import Comment from './index';
+
+export const Template = (args) => <Comment {...args} />
+
+# Comment
+
+## Overview
+
+Description.......
+
+## Default
+<Canvas>
+    <Story 
+        name="Default" 
+        args={{ 
+          value: {
+            name: "Jordi Serra Gonzalez",
+            email: "jordi.serra@yopmail.com",
+            rating: 3,
+            comments: "Lore Ipsum"
+          }
+         }}>
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+<Meta
+  title="Atoms/Comment"
+  argTypes={{}}
+/>
+
+
+<ArgsTable of={Comment} />
